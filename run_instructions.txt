@@ -1,0 +1,30 @@
+A multithreaded client-server banking system using XML-RPC in Python and .txt files for persistent storage.
+
+System Requirements:
+- Python 3.x
+- Operating System: Ubuntu/Linux (preferred) or Windows/Mac
+- No third-party Python libraries are required
+
+Dependencies:
+This system is built using Python’s standard libraries:
+- xmlrpc.server
+- socketserver
+- threading
+- os
+
+To install Python (if not installed):
+Ubuntu:
+
+sudo apt update
+sudo apt install python3
+
+How to Set Up & Execute:
+1.Open 3 terminals (or more if using multiple clients)
+2.In each terminal, navigate to the src/ folder:
+3.Run the following in separate terminals:
+Terminal 1 - Master Server: python3 master.py
+Terminal 2 - Server 1:      python3 server1.py
+Terminal 3 - Server 2:      python3 server2.py
+ Terminal 4 - Client :      python3 client.py
+
+

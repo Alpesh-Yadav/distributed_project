@@ -1,0 +1,7 @@
+101:1000.0;created;counter:0
+101:1001.0;deposit:1.0;counter:2
+101:1001.0;deposit:1.0;counter:2
+101:1002.0;deposit:1.0;counter:3
+101:1003.0;deposit:1.0;counter:4
+101:1004.0;deposit:1.0;counter:5
+101:1005.0;deposit:1.0;counter:6

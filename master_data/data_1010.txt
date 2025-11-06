@@ -1,0 +1,3 @@
+1010:0.0;created;counter:0
+1010:1.0;deposit:1.0;counter:1
+1010:2.0;deposit:1.0;counter:2

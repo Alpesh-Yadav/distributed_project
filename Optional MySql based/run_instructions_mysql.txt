@@ -1,0 +1,87 @@
+
+
+Group 20 - MySQL-Based Distributed Banking System
+
+This version of the project uses a MySQL database for persistent account and transaction storage. It supports concurrent clients, multi-server routing, and full CRUD banking operations.
+
+ System Requirements
+
+- Python 3.x
+- MySQL Server
+- OS: Ubuntu (preferred) or any platform
+- Required Python Package: mysql-connector-python
+
+To install MySQL:
+Ubuntu:
+sudo apt update
+sudo apt install mysql-server
+
+To install the Python connector:
+pip install mysql-connector-python
+
+
+ Database Setup:
+
+1. Start MySQL server:
+sudo service mysql start
+
+2. Login to MySQL:
+mysql -u root -p
+
+3. Run the SQL setup script:
+Use the provided db_setup.sql file:
+
+mysql -u root -p < docs/db_setup.sql
+
+
+4. Make sure the database and tables are created.
+
+ Use the following credentials inside your server code:
+- Username: bankuser
+- Password: Bankpass123!
+- Database: banking_system
+
+
+
+
+ How to Run the Project
+
+ Open 4+ terminals and navigate to src/ directory
+
+ Terminal 1 - Master Server:
+python3 m1.py
+
+Terminal 2 - Server 1:
+python3 s1.py
+
+ Terminal 3 - Server 2:
+python3 s2.py
+
+ Terminal 4 - Client:
+python3 c1.py
+
+Multiple clients can be run in parallel.
+
+
+Test Flow:
+
+ Create new account
+ Deposit, Withdraw, Transfer
+ View Balance
+ View Statement
+ Concurrent operations via MySQL transactions
+
+Ports Used:
+
+- Master Server (M1): localhost:8003
+- Server 1 (S1): localhost:8000
+- Server 2 (S2): localhost:8001
+
+In terminal:
+mysql -u root -p
+
+Show all databases : SHOW DATABASES;
+Select a database : USE database_name;
+Show tables in database : SHOW TABLES;
+Show table structure : DESCRIBE table_name;
+Exit MySQL :exit;
